@@ -8,10 +8,10 @@
 ## الروابط المباشرة
 
 - رابط المستودع:
-  [https://github.com/midou221/manga-reader-arabic-sources](https://github.com/midou221/manga-reader-arabic-sources)
+  [https://github.com/midou221/mangareader_extension/tree/main](https://github.com/midou221/mangareader_extension/tree/main)
 
 - رابط ملف المصادر الخام:
-  [https://raw.githubusercontent.com/midou221/manga-reader-arabic-sources/main/sources.json](https://raw.githubusercontent.com/midou221/manga-reader-arabic-sources/main/sources.json)
+  [https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.json](https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.json)
 
 ## طريقة إضافة المصادر إلى التطبيق
 
@@ -21,14 +21,14 @@
 4. الصق رابط ملف المصادر الخام. يجب أن ينتهي الرابط بـ `.json`:
 
 ```text
-https://raw.githubusercontent.com/midou221/manga-reader-arabic-sources/main/sources.json
+https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.json
 ```
 
 5. اضغط حفظ.
 6. سيقوم التطبيق بتحميل الملف، فحص المصادر المدعومة، ثم إضافتها إلى المصادر اليدوية.
 7. يمكن تحديث المصادر لاحقاً بالسحب للتحديث من صفحة المصادر.
 
-## صيغة ملف sources.json
+## صيغة ملف index.min.json
 
 يقرأ التطبيق الملف كقائمة من `SourceJsonObject`، وليس كإعدادات `ManualSource` المحفوظة داخل التطبيق.
 الحقول الأساسية هي:
@@ -91,8 +91,9 @@ MAD, Them, GProv, TeamProv, Keyo, Iken, PRO, Swat, Wave, Tek, Time, Zeist
 ## ملاحظات
 
 - إذا توقف أحد المصادر، قد يكون الموقع غير متاح مؤقتاً أو تغير رابط الموقع.
-- يمكن تحديث ملف `sources.json` في هذا المستودع عند تغيير الروابط أو إضافة مصادر جديدة.
+- يمكن تحديث ملف `index.min.json` في هذا المستودع عند تغيير الروابط أو إضافة مصادر جديدة.
 - استخدم رابط الملف الخام دائماً عند الاستيراد، وليس رابط صفحة GitHub العادية.
 - لا تغيّر حالة أحرف الرابط؛ مسارات GitHub الخام حساسة لحالة الأحرف.
+- كلمة `main` في الرابط هي اسم الفرع في GitHub، لذلك يجب أن يكون `index.min.json` في جذر المستودع.
 
 </div>
