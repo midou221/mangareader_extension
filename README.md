@@ -7,16 +7,13 @@
 
 ## الروابط المباشرة
 
-- رابط المستودع:
-  [https://github.com/midou221/mangareader_extension/tree/main](https://github.com/midou221/mangareader_extension/tree/main)
-
 - رابط ملف المصادر الخام:
   [https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.json](https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.json)
 
 ## طريقة إضافة المصادر إلى التطبيق
 
-1. افتح تطبيق Manga Reader.
-2. ادخل إلى صفحة المصادر.
+1. افتح تطبيق قارئ مانجا عربي
+2. ادخل إلى صفحة ادارة المصادر.
 3. اضغط على زر إضافة مصدر.
 4. الصق رابط ملف المصادر الخام. يجب أن ينتهي الرابط بـ `.json`:
 
@@ -30,7 +27,6 @@ https://raw.githubusercontent.com/midou221/mangareader_extension/main/index.min.
 
 ## صيغة ملف index.min.json
 
-يقرأ التطبيق الملف كقائمة من `SourceJsonObject`، وليس كإعدادات `ManualSource` المحفوظة داخل التطبيق.
 الحقول الأساسية هي:
 
 | الحقل | الوصف |
